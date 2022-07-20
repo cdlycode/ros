@@ -1,0 +1,121 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Developer’s Guide &#8212; vcstools 0.1.42 documentation</title>
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="http://docs.ros.org/en/independent/api/vcstools/html/_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Packages" href="modules.html" />
+    <link rel="prev" title="General VCS/SCM API" href="vcsclient.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="index.html">
+          <span>vcstools 0.1.42 documentation</span></a></h1>
+        <h2 class="heading"><span>Developer’s Guide</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="vcsclient.html">General VCS/SCM API</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="modules.html">Packages</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="developer-s-guide">
+<h1>Developer’s Guide<a class="headerlink" href="#developer-s-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="code-api">
+<h2>Code API<a class="headerlink" href="#code-api" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Packages</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="changelog">
+<h2>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html#id1">0.1</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="bug-reports-and-feature-requests">
+<h2>Bug reports and feature requests<a class="headerlink" href="#bug-reports-and-feature-requests" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/vcstools/vcstools">Submit a bug report</a></li>
+</ul>
+</div>
+<div class="section" id="developer-setup">
+<h2>Developer Setup<a class="headerlink" href="#developer-setup" title="Permalink to this headline">¶</a></h2>
+<p>vcstools uses <a class="reference external" href="http://pypi.python.org/pypi/setuptools">setuptools</a>,
+which you will need to download and install in order to run the
+packaging.  We use setuptools instead of distutils in order to be able
+use <code class="docutils literal notranslate"><span class="pre">setup()</span></code> keys like <code class="docutils literal notranslate"><span class="pre">install_requires</span></code>.</p>
+<blockquote>
+<div>cd vcstools
+python setup.py develop</div></blockquote>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<p>Install test dependencies</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">nose</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">mock</span>
+</pre></div>
+</div>
+<p>vcstools uses <a class="reference external" href="http://readthedocs.org/docs/nose/en/latest/">Python nose</a> for testing, which is
+a fairly simple and straightfoward test framework.  The vcstools
+mainly use <code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest</span></code> to construct test fixtures, but with nose
+you can also just write a function that starts with the name <code class="docutils literal notranslate"><span class="pre">test</span></code>
+and use normal <code class="docutils literal notranslate"><span class="pre">assert</span></code> statements.</p>
+<p>vcstools also uses <a class="reference external" href="http://www.voidspace.org.uk/python/mock/">mock</a>
+to create mocks for testing.</p>
+<p>You can run the tests, including coverage, as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">vcstools</span>
+<span class="n">make</span> <span class="n">test</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>Sphinx is used to provide API documentation for vcstools.  The documents
+are stored in the <code class="docutils literal notranslate"><span class="pre">doc</span></code> subdirectory.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="vcsclient.html">General VCS/SCM API</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="modules.html">Packages</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2010, Willow Garage.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>

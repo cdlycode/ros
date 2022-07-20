@@ -1,0 +1,350 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Changelog &#8212; vcstools 0.1.42 documentation</title>
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="http://docs.ros.org/en/independent/api/vcstools/html/_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="vcstools Package" href="vcstools.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="index.html">
+          <span>vcstools 0.1.42 documentation</span></a></h1>
+        <h2 class="heading"><span>Changelog</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="vcstools.html">vcstools Package</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="id1">
+<h1>0.1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>0.1.42<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>remove cosmic and disco until we have hosting for it</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>0.1.41<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>fix git submodule error due to lack of quoting</li>
+<li>Fix git update failure by refreshing git index before fast-forward</li>
+<li>Fix python3 incompatibility due to wrong use of urlopen</li>
+<li>Updating get_affected_files function by removing single quotes covering format (#129)</li>
+<li>Fix export_upstream for git submodules with relative urls. (#130)</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>0.1.40<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Trivial style and testing changes</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>0.1.39<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Added support for git submodule in export_repository</li>
+<li>Add Wily Xenial Yakkety</li>
+<li>Add get_affected_files for all vcss</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>0.1.38<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Fixed test failures due to SVN 1.9.</li>
+<li>Added the <code class="docutils literal notranslate"><span class="pre">get_default_remote_version_label()</span></code> API method to support changes in <code class="docutils literal notranslate"><span class="pre">wstool</span></code>.</li>
+<li>Renamed some internal functions to have a leading <code class="docutils literal notranslate"><span class="pre">_</span></code> to indicate that they are private.</li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h2>0.1.37<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Fix an issue where log were restricted to the named branch (hg).</li>
+<li>Fixed svn to use a global revision number rather than a branch-local revision.</li>
+<li>Added the get_remote_version() and get_current_version_label() API calls.</li>
+<li>Enhanced use of <code class="docutils literal notranslate"><span class="pre">no_warn</span></code> in run_shell_command().</li>
+<li>Fix get_version() to catch stderr.</li>
+<li>Added get_branches() API call.</li>
+<li>Fix some errors and warnings to output to stderr.</li>
+<li>Fix output to avoid extra newlines when show_stdout=True.</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h2>0.1.36<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Updates to the release platforms (-lucid +utopic +vivid)</li>
+<li>Fix an issue with updating branches on git, see vcstools/wstool#25</li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h2>0.1.31<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Fix submodule support on checkout #71</li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h2>0.1.30<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>use netrc to download tars from private repos, also will work for private rosinstall files</li>
+<li>Fix checks for empty repository #62</li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h2>0.1.29<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>fix #57 shallow checkout of non-master breaks with git &gt;= 1.8.0</li>
+<li>unit test fixes</li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h2>0.1.28<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>test of new upload method</li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h2>0.1.27<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>fix #51 hg status and diff dont work if workspace is inside hg repo</li>
+<li>fix #47 several performance improvements by removing unecessary update actions after checkout</li>
+<li>fix #46 https tar download fails behind proxy</li>
+<li>fix #45 sometimes commands run forever</li>
+<li>fix #44 minor bug when checking out from repo with default branch not master</li>
+<li>fix #41 improvedAPI, get_vcs_client function part of vcstools module</li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h2>0.1.26<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>fix #38 git commands fail in local repositories with many (&gt;2000) references</li>
+<li>fix #31 get_log() svn xml not available on Ubuntu Lucid (hg 1.4.2)</li>
+<li>fix #37 update() returns True even when fetch failed</li>
+</ul>
+</div>
+<div class="section" id="id15">
+<h2>0.1.25<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>minor bugfixes</li>
+<li>travis-ci config file</li>
+<li>fix unit tests for svn diff&amp;status ordering changes</li>
+<li>deprecated VcsClient Class</li>
+<li>added get_log function</li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h2>0.1.24<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>fix git update return value to False when fast-forward not possible due to diverge</li>
+<li>fix. svn certificate prompt invisible, svn checkout and update become verbose due to this</li>
+</ul>
+</div>
+<div class="section" id="id17">
+<h2>0.1.22<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Changed the way that git implements detect_presence to fix a bug with submodules in newer versions of git</li>
+<li>fix for git single quotes on Windows</li>
+<li>minor internal api bug where a git function always returned True</li>
+<li>fix gub in svn export_repository</li>
+</ul>
+</div>
+<div class="section" id="id18">
+<h2>0.1.21<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>bugfix #66: hg http username prompt hidden</li>
+<li>add export_repository method to vcs_base and all implementations with tests</li>
+<li>bugfix #64: unicode decoding problems</li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h2>0.1.20<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>rosws update –verbose for git prints small message when rebasing</li>
+<li>improved python3 compatibility</li>
+</ul>
+</div>
+<div class="section" id="id20">
+<h2>0.1.19<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>more python3 compatibility</li>
+<li>code style improved</li>
+<li>match_url to compare bzr shortcuts to real urls</li>
+<li>more unit tests</li>
+<li>get_status required to end with newline, to fix #55</li>
+</ul>
+</div>
+<div class="section" id="id21">
+<h2>0.1.18<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>added shallow flag to API, implemented for git</li>
+</ul>
+</div>
+<div class="section" id="id22">
+<h2>0.1.17<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>svn stdout output on get_version removed</li>
+</ul>
+</div>
+<div class="section" id="id23">
+<h2>0.1.16<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>All SCMs show some output when update caused changes</li>
+<li>All SCMs have verbose option to show all changes done on update</li>
+<li>bugfix for bazaar getUrl() being a joined abspath</li>
+<li>bugfix for not all output being shown when requested</li>
+</ul>
+</div>
+<div class="section" id="id24">
+<h2>0.1.15<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Added pyyaml as a proper dependency, removed detection code.</li>
+<li>remove use of tar entirely, switch to tarfile module</li>
+<li>fix #36 allowing for tar being bsdtar on OSX</li>
+</ul>
+</div>
+<div class="section" id="id25">
+<h2>0.1.14<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Added tarball uncompression.</li>
+</ul>
+</div>
+<div class="section" id="id26">
+<h2>0.1.13<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>added this changelog</li>
+<li>git get-version fetches only when local lookup fails</li>
+<li>hg get-version pulls if label not found</li>
+<li>Popen error message incudes cwd path</li>
+</ul>
+</div>
+<div class="section" id="id27">
+<h2>0.1.12<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>py_checker clean after all refactorings since 0.1.0</li>
+</ul>
+</div>
+<div class="section" id="id28">
+<h2>0.1.11<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>svn and hg update without user interaction</li>
+<li>bugfix #30</li>
+<li>minor bugfixes</li>
+</ul>
+</div>
+<div class="section" id="id29">
+<h2>0.1.10<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>minor bugs</li>
+</ul>
+</div>
+<div class="section" id="id30">
+<h2>0.1.9<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>safer sanitization of shell params</li>
+<li>git diff and stat recurse for submodules</li>
+<li>base class manages all calls to Popen</li>
+</ul>
+</div>
+<div class="section" id="id31">
+<h2>0.1.8<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>several bugfixes</li>
+<li>reverted using shell commands instead of bazaar API</li>
+</ul>
+</div>
+<div class="section" id="id32">
+<h2>0.1.7<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>reverted using shell commands instaed of pysvn and mercurial APIs</li>
+<li>protection against shell incection attempts</li>
+</ul>
+</div>
+<div class="section" id="id33">
+<h2>0.1.6<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>bugfixes to svn and bzr</li>
+<li>unified all calls through Popen</li>
+</ul>
+</div>
+<div class="section" id="id34">
+<h2>0.1.5<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>missing dependency to dateutil added</li>
+</ul>
+</div>
+<div class="section" id="id35">
+<h2>0.1.4<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h2>
+<p>switched shell calls to calls to python API of mercurial, bazaar, py-svn</p>
+</div>
+<div class="section" id="id36">
+<h2>0.1.3<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>fix #6</li>
+</ul>
+</div>
+<div class="section" id="id37">
+<h2>0.1.2<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>fix #15</li>
+</ul>
+</div>
+<div class="section" id="id38">
+<h2>0.1.1<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>more unit tests</li>
+<li>diverse bugfixes</li>
+<li>major change to git client behavior, based around git <a class="reference external" href="https://kforge.ros.org/vcstools/trac/ticket/1">https://kforge.ros.org/vcstools/trac/ticket/1</a></li>
+</ul>
+</div>
+<div class="section" id="id39">
+<h2>0.1.0<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>documentation fixes</li>
+</ul>
+</div>
+<div class="section" id="id40">
+<h2>0.0.3<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>import from svn</li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="vcstools.html">vcstools Package</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2010, Willow Garage.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>
